@@ -1,4 +1,6 @@
 sudo: false # allows builds to be run in a container (faster)
+before_install:
+  - npm install -g npm
 install: make
 script: make test
 language: node_js
